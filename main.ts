@@ -3,6 +3,7 @@ let y = 0
 let list: number[] = []
 let n = 0
 let a = 0
+// 藉由陣列的特性，產生不重複的隨機數 
 function 燈數 (num: number) {
     if (num % 5 == 0) {
         x = 4
@@ -13,6 +14,7 @@ function 燈數 (num: number) {
     }
     led.plot(x, y)
 }
+// 每按一下就會亮10顆燈
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
     list = []
@@ -29,6 +31,7 @@ input.onButtonPressed(Button.A, function () {
         }
     }
 })
+// 每按一下就會亮3顆燈
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     list = []
